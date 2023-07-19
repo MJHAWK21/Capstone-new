@@ -1,0 +1,146 @@
+/* .carouselExampleInterval{
+    height: 100vh;
+    width: 100vw;
+} */
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.logo{
+
+    width: 100px;
+    cursor: pointer;
+
+
+}
+
+img{
+    width: 20rem;
+    object-fit: contain;
+    mix-blend-mode: color-dodge;
+
+    
+}
+
+
+.navbar{
+
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #bf1229;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+
+}
+
+
+
+
+.navbar ul li:hover ::after{
+    width:100%;
+}
+
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #bf1229;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+
+    background-color: #bf1229;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+ 
+
+button:hover span{
+    width: 100%;
+}
+
+
+
+button:hover {
+    border: none;
+
+}
+
+
+.content{
+
+    color:#fbfcfd;
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    transform: translateY(-50%) verticaly center;
+    z-index: 2;
+    
+
+}
+
+
+
+h2{
+
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+
+} 

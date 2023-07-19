@@ -1,0 +1,37 @@
+<!-- <app-nav-bar></app-nav-bar> 
+<section class="products">
+  <div class="container">
+    <h2>Products</h2>
+    <div class="product-list">
+      <div class="product" *ngFor="let product of products">
+        <img [src]="product.image" alt="Product Image" class="product-image">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.price }}</p>
+        <div class="product" *ngFor="let product of products" (click)="updateProduct(product)">
+
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br> -->
+
+<app-nav-bar></app-nav-bar> 
+<div class="products">
+  <div class="container">
+    <h2>Products</h2>
+    <div class="product-list">
+      <div class="product" *ngFor="let product of products">
+        <img [src]="product.image" alt="Product Image" class="product-image">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.price }}</p>
+        <!-- <a (click)="navigateToUpdate(product.id)" class="btn">Update</a> -->
+        <button [routerLink]="['/update-product', product.id]" class="btn">Update</button>
+        <br>
+        <br>
+        <button [routerLink]="['/delete-product', product.id]" class="btn">Delete</button>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<!-- <div class="container">
+    <h1>Delete Product</h1>
+    <p>Are you sure you want to delete this product?</p>
+    <div class="product-details">
+      <h3>{{ product.name }}</h3>
+      <p>Price: {{ product.price }}</p>
+      <p>Image: {{ product.image }}</p>
+    </div>
+    <div class="button-group">
+      <button class="delete-button" (click)="deleteProduct()">Delete</button>
+    </div>
+    <div *ngIf="successMessage" class="alert success">
+      {{ successMessage }}
+    </div>
+  </div> -->
+  
+
+  <div class="container">
+    <h1>Delete Product</h1>
+    <div class="product-details">
+      <h3>{{ product.name }}</h3>
+      <p>Price: {{ product.price }}</p>
+      <p>Image URL: {{ product.image }}</p>
+    </div>
+    <div class="alert success" *ngIf="successMessage">
+      {{ successMessage }}
+    </div>
+    <div class="buttons">
+      <button class="btn btn-primary" (click)="deleteProduct()">Delete</button>
+      <!-- <button class="btn btn-secondary" (click)="updateProduct()">Cancel</button> -->
+    </div>
+  </div>
+  
